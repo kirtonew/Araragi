@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js便笺 模仿</title>
+    <style type="text/css">
+        /* //主板颜色 */
+        body{
+            margin: 0;
+            padding: 0;
+            background-color: #222222;;
+        }
+        /* 便笺整体设计 */
+        .note-container{
+            position: absolute;
+            width: 300px;
+            height: 400px;
+            background-color: #f1f180;
+            box-shadow:0 3px 20px rgba(0,0,0,.25);
+            border-radius:5px;
+            overflow:hidden;
+        }
+        /* 标题 部分*/
+        .note-title{
+            position:relative;
+            width: 100%;
+            color:#000;
+            background-color: #e4be32;
+            user-select:none;
+            cursor:default;
+        }
+        /* 标题文字 */
+        .note-title h6{
+            margin:0;
+            padding-left:15px;
+            font-size:16px;
+            font-weight: 700;
+            height:40px;
+            line-height: 40px;
+        }
+        /* 右上角关闭按钮 */
+        .note-title .btn-close{
+            position: absolute;
+            height: 40px;
+            width: 40px;
+            line-height: 40px;
+            right: 0;
+            top: 0;
+            color: #000;
+            text-align :center;
+            text-decoration:none;
+        }
+        /* close 的hover
+            颜色变白  背景变深黄 */
+        .note-title .btn-close:hover{
+            background-color: #c3a01e;
+            color:#fff;
+        }
+        /* 笔记内容 */
+        .note-content{
+            height: 300px;
+            padding: 10px;
+            overflow-y:auto;
+            outline: none;
+        }
+        /* 页脚部分 */
+        .note-footer{
+            height: 40px;
+            line-height: 40px;
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -ms-flex;
+            display: -o-flex;
+            display: flex;
+        }
+        /*  新建和删除按钮 */
+        .note-footer .btn-new,
+        .note-footer .btn-remove{
+            flex:1;
+            width: 40px;
+            height: 40px;
+            color: #333;
+            text-align: center;
+            font-size: 16px;
+            font-weight: 700;
+            text-decoration: none;
+            outline: none;
+            border: none;
+            background-color: #e4be32;;
+        }
+        /* 新建与删除按钮的特殊效果
+        字体变白 背景变浅色 */
+        .note-footer .btn-new:hover,
+        .note-footer .btn-remove:hover{
+            /* opacity大于1无效 */
+            opacity: 0.7;
+            color: #fff;
+        }
+    </style>
+    <script type="text/javascript" src="js/app.js"></script>
+</head>
+<body>
+</body>
+</html>
